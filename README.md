@@ -1,64 +1,127 @@
-> 写一句项目描述，就能生成软著申请材料草稿。  
-> 从创建、编辑到导出，知产猫帮你把复杂流程变成简单操作。
+> 一句话描述软件，就能快速生成软著申请材料草稿。  
+> 从首页引导、草稿确认、申请编辑到文档与代码导出，软著通把复杂流程收束成一个连续工作流。
 
-# [软著通（RuanZhuInk）](https://www.ruanzhu.ink)
+# 软著通（RuanZhuTong）
 
-## 一句话介绍
-软著通（RuanZhuInk）是一款给个人开发者和小团队使用的软著材料生成平台。你只要输入项目描述，就能快速得到可编辑、可导出的申请材料。
+[官网入口](https://www.ruanzhu.ink)  
+[落地页教程](./docs/landing-page-tutorial.md)
 
-![首页展示图](./docs/screenshots/placeholder-home-hero.png)
-![首页展示图](./docs/screenshots/placeholder-home-test.png)
+## 项目概述
 
-## 用户价值
-- 上手快：一句话创建申请草稿，不懂流程也能开始。
-- 成本低：自己完成大部分材料准备，减少外包依赖。
-- 省时间：说明书和代码材料自动整理，支持直接导出。
-- 可追踪：申请进度、时间线、材料都在一个工作台里查看。
+软著通是一款面向个人开发者、小团队和自由职业者的软著材料生成平台。
+它的核心不是“再做一个表单”，而是把软著申请里最费时间的几件事串起来：
 
-![控制台展示图](./docs/screenshots/placeholder-dashboard-home.png)
+- 用一句项目描述快速创建申请草稿
+- 在控制台持续补全申请信息和流程节点
+- 生成并确认原型、模板、文档和代码材料
+- 直接导出为可提交的软著申请材料
 
-## 用户最关心的功能
-### 1. 快速登录与账户安全
-- 邮箱验证码登录、密码登录、Google 登录。
-- 忘记密码找回，支持新用户首次资料完善。
+## 从截图看到的完整产品链路
 
-![登录页展示图](./docs/screenshots/placeholder-auth-login.png)
+### 1. 首页先解决“怎么开始”
 
-### 2. 软著申请一站式流程
-- 新建申请：填写软件名称、版本、功能描述等核心信息。
-- 智能生成：自动生成申请摘要与基础材料。
-- 申请管理：列表查看、状态筛选、进度追踪。
-- 申请详情：支持在线编辑、提交与重新生成。
+首页强调一句话输入、快速辅助填写和透明交付承诺，适合第一次接触软著申请的用户快速进入任务。
 
-![申请列表展示图](./docs/screenshots/placeholder-applications-list.png)
-<!-- 截图说明：路由 `/dashboard/applications` -->
-![申请详情展示图](./docs/screenshots/placeholder-application-detail.png)
-<!-- 截图说明：路由 `/dashboard/applications/:id` -->
+![软著通官网首页](./docs/images/Landing-Home.png)
 
-### 3. 材料导出能力（核心）
-- 说明书工作台：Markdown 编辑、图表渲染、打印/PDF 导出。
-- 源代码工作台：代码自动排版、分页处理、打印/PDF 导出。
+当用户输入项目描述后，会弹出结果确认层，要求先核对软件全称、简称和主要功能，再进入正式申请流程。
 
-![说明书导出展示图](./docs/screenshots/placeholder-application-docs.png)
-<!-- 截图说明：路由 `/dashboard/applications/:id/docs` -->
-![代码材料导出展示图](./docs/screenshots/placeholder-application-code.png)
-<!-- 截图说明：路由 `/dashboard/applications/:id/code` -->
+![首页草稿确认弹窗](./docs/images/Landing-Brif.png)
 
-### 4. 实用 AI 工具箱（附加价值）
-- SVG Studio：在线编辑图形、AI 生成 SVG、导出图片。
-- 图片工坊：抠图、压缩、格式转换、切图。
-- PDF 转图 / 图转 PDF：日常文档处理更高效。
-- 多模态生成：文生图、图生图、视频生成。
-- 合作协议生成：在线填写并导出。
+### 2. 控制台负责承接后续所有动作
 
-![工具箱展示图](./docs/screenshots/placeholder-tools-overview.png)
-<!-- 截图说明：路由 `/tools` -->
-![SVG Studio 展示图](./docs/screenshots/placeholder-tool-svg-studio.png)
-<!-- 截图说明：路由 `/tools/svg-to-png` -->
-![图片工坊展示图](./docs/screenshots/placeholder-tool-image-processing.png)
-<!-- 截图说明：路由 `/tools/image-processing` -->
+控制台首页把申请数据、最近申请和常用工具放进同一个工作台里，明显不是单次表单，而是一个持续使用的后台。
+
+![控制台首页](./docs/images/Console-Home.png)
+
+申请列表页承接搜索、筛选、批量建草稿和状态查看，是“持续管理申请”的主入口。
+
+![申请列表页](./docs/images/Console-List.png)
+
+邀请有礼页面说明产品还带有增长和运营能力，不只是单点工具。
+
+![邀请有礼页面](./docs/images/Console-Invite.png)
+
+常用工具页则把网页工坊、图表工坊、协议文档、图片处理、PDF 转图等能力集中到一个工具箱里。
+
+![常用工具页](./docs/images/Console-Tool.png)
+
+## 核心申请流程
+
+### 1. 申请详情页
+
+申请详情页用于填写申请信息、查看进度记录、进入编辑和导出流程，是整个软著流程的主控台。
+
+![申请详情页](./docs/images/Application-Page.png)
+
+### 2. 原型确认方式选择
+
+在原型确认阶段，系统提供两条路径：
+
+- 上传自己的模块图片
+- 由系统智能生成页面
+
+这个设计直接对应真实用户的两类工作习惯。
+
+![原型确认页](./docs/images/Application-Prototype.png)
+
+### 3. 公共模板确认
+
+模板确认页用于确认公共模板 HTML，并作为后续真实模块页面生成的基础。
+
+![模板确认页](./docs/images/Application-Template.png)
+
+### 4. 页面模块与源码确认
+
+页面模块确认页会把模块目录、分类结构、页面用途和 HTML 预览放到一起，便于逐步核查。
+
+![页面模块确认页](./docs/images/Application-Table.png)
+
+### 5. 文档材料导出
+
+文档工作台支持在线编辑、重载和打印 / 导出 PDF，直接承接说明书交付。
+
+![文档材料页](./docs/images/Application-WenDang.png)
+
+### 6. 代码材料导出
+
+代码工作台负责展示分页后的程序鉴别材料，同样支持重载与打印 / 导出 PDF。
+
+![代码材料页](./docs/images/Application-Chengxu.png)
+
+## 工具生态
+
+软著通不是只做软著申请表单，它还围绕“申请过程中的配套生产”扩展了工具生态。
+
+### 图表工坊
+
+图表工坊提供模板库、编辑画布和导出能力，适合补充说明书中的结构图、流程图和关系图。
+
+![图表工坊](./docs/images/Tool-TuBiaoGongFang.png)
+
+### 网页工坊
+
+网页工坊支持输入需求、实时预览、HTML 编辑和发布分享，适合快速生成演示页面或原型页。
+
+![网页工坊](./docs/images/Tool-WangYeGongFang.png)
+
+## 从这些界面提炼出的产品价值
+
+- 上手门槛低：首页直接承接“一句话输入”，适合不熟悉软著流程的用户。
+- 工作流完整：从创建草稿到确认模板、编辑说明书、导出代码材料，都在一个系统里完成。
+- 可持续管理：控制台、列表、进度记录和邀请体系说明这不是一次性页面，而是有留存能力的产品。
+- 配套能力齐全：图表、网页、图片、PDF 等工具补足了材料准备中的高频辅助需求。
 
 ## 适合哪些用户
-- 独立开发者：想快速完成软著材料准备并提交。
-- 自由职业者：希望低成本、自助完成申请文档制作。
-- 小型创业团队：需要稳定、可复用的申请流程模板。
+
+- 独立开发者：希望快速整理软著申请材料，不想从空白文档开始。
+- 小型创业团队：需要把申请流程固化成一套可追踪的内部工作流。
+- 自由职业者 / 服务商：希望提高交付效率，减少重复整理材料的时间。
+
+## 如果你要继续做官网或落地页
+
+建议先阅读这份文档：
+
+- [落地页教程](./docs/landing-page-tutorial.md)
+
+教程会把以上截图拆解成可直接用于官网落地页的模块、文案结构和实现顺序。
